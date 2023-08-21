@@ -104,6 +104,7 @@ const app = new Vue({
         });
         console.log(parsed);
         this.authentication.parsed = parsed;
+        window.open("tg://resolve?domain=mraabot");
       } catch (e) {
         console.warn(e);
         this.$buefy.toast.open({
