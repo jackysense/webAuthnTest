@@ -86,9 +86,11 @@ export async function register(username, challenge, options) {
     };
     if (options.debug)
         alert(creationOptions);
+    alert("before");
     const credential = (await navigator.credentials.create({
         publicKey: creationOptions,
     })); //PublicKeyCredential
+    alert("after");
     if (options.debug)
         alert(credential);
     const response = credential.response; // AuthenticatorAttestationResponse
