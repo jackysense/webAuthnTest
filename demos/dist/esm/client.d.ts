@@ -1,4 +1,4 @@
-import { AuthenticateOptions, AuthenticationEncoded, RegisterOptions, RegistrationEncoded } from './types.js';
+import { AuthenticateOptions, AuthenticationEncoded, RegisterOptions, RegistrationEncoded } from "./types.js";
 /**
  * Returns whether passwordless authentication is available on this browser/platform or not.
  */
