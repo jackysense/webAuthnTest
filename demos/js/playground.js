@@ -105,6 +105,7 @@ const app = new Vue({
         console.log(parsed);
         this.authentication.parsed = parsed;
         document.getElementById("aa").click();
+        alert("localStorage" + localStorage);
         // window.open("tg://resolve?domain=mraabot");
       } catch (e) {
         console.warn(e);
