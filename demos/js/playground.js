@@ -77,6 +77,7 @@ const app = new Vue({
       }
     },
     async login() {
+      alert("localStorage" + localStorage);
       this.authentication.result = null;
       this.authentication.parsed = null;
       try {
@@ -105,7 +106,7 @@ const app = new Vue({
         console.log(parsed);
         this.authentication.parsed = parsed;
         document.getElementById("aa").click();
-        alert("localStorage" + localStorage);
+
         // window.open("tg://resolve?domain=mraabot");
       } catch (e) {
         console.warn(e);
